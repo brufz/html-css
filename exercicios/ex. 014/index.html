@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias - vídeo</title>
+</head>
+<body>
+  <h1>Adicionando vídeo ao html</h1>
+  <p>Para mexer no formato do vídeo, instalar o programa HandBreak</p> <!--não consegui rodar o programa-->
+  <!--Formatos: mp4, M4V, WEBM, OGV, os navegadores são compatíveis com formatos diferentes-->
+  <video src="midias/video1.mp4" width="300" controls></video> <!--widht ajusta o tamanho que aparece. Controls dá play no video-->
+
+  <!--Essa primeira forma que apareceu seria apenas para um formato de vídeo, mas como cada navegador roda um formato diferente, deve-se colocar todos, da forma abaixo (quando tiver os outros formatos)-->
+
+  <!-- <video controls> 
+    <source src= midias/video1.mp4 type=video/mp4">
+    <source src= midias/video1.m4v type=video/mp4">
+    <source src= midias/video1.ogg type=video/ogg">
+
+  </video> -->
+<h1>Esta é outra forma de inserir vídeo</h1>
+  <video width="300" controls autoplay loop>
+    <source src="midias/video1.mp4" type="video/mp4">
+    <p>Seu navegador não tem compatibilidade para reprodução de vídeos</p>
+  </video>
+
+  <h1>Inserindo vídeos do youtube</h1>
+  <iframe width="300" height="315" src="https://www.youtube.com/embed/MyAYLIUDnQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+
+</body>
+</html>
