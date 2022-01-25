@@ -1,0 +1,242 @@
+
+
+body {
+  background-image: url('imagens/background3-1300.jpg');
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navlist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.navlist li {
+  list-style: none;
+  margin-right: 2rem;
+  font-weight: 700;
+  
+}
+
+li:last-child {
+  margin-left: auto;
+
+}
+
+button {
+  background-color: white;
+  color: rgb(243, 37, 71);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+li:hover {
+  font-weight: normal;
+  color: rgb(243, 37, 71);
+  text-decoration: underline;
+
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+aside h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+aside div {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  background-image: linear-gradient(to right, rgb(243, 37, 71), rgb(248, 69, 45) );
+  padding: 20px 50px;
+  width: 200px;
+  margin: auto;
+  border-radius: 100px;
+  margin-bottom: 200px;
+  box-sizing: inherit;
+  
+  
+}
+
+aside div.hide {
+  display: none;
+}
+
+aside div:hover {
+  text-decoration: underline;
+  background-color: rgb(243, 37, 71);
+}
+
+section {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+section > div {
+  border: 0.5px solid rgba(128, 128, 128, 0.493);
+  height: 200px;
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.404);
+}
+
+section > div h1 {
+  font-size: 16px;
+}
+
+section > div p {
+  font-size: 14px;
+  color: gray;
+}
+
+
+main {
+  display: flex;
+  background-color: white;
+  color: black;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+main li {
+  list-style: none;
+  line-height: 1.5em;
+  font-size: 0.9rem;
+}
+
+main li:hover {
+  text-decoration: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+main ul {
+  padding: 20px;
+  margin: 20px;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 0.7rem;
+  line-height: 1.5em;
+  color: gray;
+}
+
+footer h1 {
+  font-size: 20px;
+  margin: 16px 0px;
+  text-align: left;
+  
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    background-image: url('imagens/background-600widht.jpg');
+    width: 100%;
+  }
+  
+  aside div {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 50px;
+    width: 80%;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 50px;
+  }
+
+  aside h1 {
+    font-size: 80px;
+  }
+
+  .navlist {
+    display: none;
+  }
+
+
+
+  section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
+  section > div {
+    margin-bottom: 30px;
+  }
+    
+  
+
+  footer p {
+    font-size: 7px;
+  }
+
+  footer h1 {
+    font-size: 10px;
+    
+  }
+
+  
+  
+
+  aside div.hide {
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+/*
+
+JS?
+@keyframes fadeOut {
+
+  to {
+    opacity: 0.3;
+  }
+}
+
+aside {
+  animation: fadeOut 5s;
+}
+*/
