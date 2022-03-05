@@ -11,6 +11,7 @@
   <h1>Contagem regressiva</h1>
   <div id="output"></div>
   <h2>Crie uma contagem regressiva</h2>
+  <input id="data" type="date">
  
   <button onclick="iniciarContagem()"> Iniciar </button>
 
@@ -18,15 +19,21 @@
     var output = document.querySelector ('#output');
     var mensagem = '';
     //Clique para adicionar uma data e um horário
-    //Mostra um calendário
-    // Pergunta qual é o evento da contagem regressiva
+    var data = document.querySelector('#data');
+    var hoje = Date.now();
+    var evento = new Date();
+
 
     // Clica em iniciar
+
+    function calcularContagem(){
+
+    }
     
     
 
     function iniciarContagem() {
-      mensagem = '8 dias';
+      mensagem = '.';
       output.innerHTML = mensagem;
     }
 
